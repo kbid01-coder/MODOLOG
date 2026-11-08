@@ -36,5 +36,5 @@ export async function onRequestGet({request,env}){
     botao.textContent = 'Sair';
   }
 };</script></body></html>`;
- return new Response(html,{headers:{...headers,'Content-Type':'text/html; charset=utf-8','X-Frame-Options':'DENY','Content-Security-Policy':"default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"}});
+ return new Response(html,{headers:{...headers,'Content-Type':'text/html; charset=utf-8','X-Frame-Options':'DENY','Content-Security-Policy':"default-src 'none'; connect-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'"}});
 }
