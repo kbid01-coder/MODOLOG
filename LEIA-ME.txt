@@ -1,0 +1,23 @@
+MODOLOG - PORTAL NOVO COM LOGIN SUPABASE DO CHECKLIST
+
+1. Crie um repositorio GitHub para o portal e envie o CONTEUDO desta pasta na raiz.
+   Mantenha a estrutura functions/api/auth.js e functions/_session.js e functions/apps.js.
+2. Conecte esse repositorio ao Cloudflare Pages como projeto Pages com Git integration.
+   Framework: None; build command: vazio; output directory: / (raiz).
+3. Em Settings > Variables and Secrets > Production, configure:
+   SUPABASE_URL = URL do projeto Supabase do Checklist
+   SUPABASE_PUBLISHABLE_KEY = chave publishable do mesmo projeto (ou SUPABASE_ANON_KEY)
+   SUPABASE_SECRET_KEY = chave secret do mesmo projeto (ou SUPABASE_SERVICE_ROLE_KEY)
+   PORTAL_SESSION_SECRET = segredo aleatorio exclusivo com pelo menos 32 caracteres
+   Guarde as chaves no Cloudflare, nunca no GitHub.
+4. Publique novamente apos configurar as variaveis.
+5. Teste login com um usuario ATIVO do Checklist, acesso a /apps e botao Sair.
+
+NOTAS DE SEGURANCA
+- Login verificado no Supabase Auth, seguido de verificacao de perfil ativo em modolog_profiles.
+- A pagina /apps e entregue pelo servidor apenas com sessao valida.
+- A sessao e assinada e expira em ate 8 horas. Os apps possuem logins proprios.
+- As URLs publicas dos apps permanecem acessiveis diretamente.
+- O portal nao armazena senhas. O segredo do servidor jamais deve ser exposto.
+- Esta versao ainda requer teste de implantacao real; nao foi testada com suas chaves.
+- Se o login retornar 502, verifique logs da funcao no Cloudflare e compatibilidade das chaves.
