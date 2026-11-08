@@ -53,7 +53,16 @@ export async function onRequestPost({request,env}) {
   try {p=await getProfile(c,auth.user.id);}
   catch(e) {
     console.error('Portal diagnostic - consulta_perfil:',e?.message);
-    return reply({error:'Falha ao consultar o perfil do Checklist.',etapa:'consulta_perfil'},502);
+    const codigo = String(e?.message || '');
+const diagnostico = /^profile_http_\d{3}$/.test(codigo)
+  ? codigo
+  : codigo === 'profile_network' ? 'profile_network' : 'profile_other';
+
+return reply({
+  error:'Falha ao consultar o perfil do Checklist.',
+  etapa:'consulta_perfil',
+  diagnostico
+},502);
   }
   if(!p) return reply({error:'Usuário sem perfil ativo no Checklist.',etapa:'perfil_inativo'},403);
 
