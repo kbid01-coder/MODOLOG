@@ -27,7 +27,7 @@ export async function onRequestPost({request,env}) {
       method:'POST',
       headers:{apikey:c.publicKey,'Content-Type':'application/json'},
       body:JSON.stringify({email,password}),
-      redirect:'error'
+      redirect:'follow'
     });
   } catch(e) {
     console.error('Portal diagnostic - supabase_fetch:',e?.message);
