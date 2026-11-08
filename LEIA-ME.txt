@@ -1,11 +1,10 @@
-MODOLOG - Atualizacao visual do Portal
+MODOLOG - Layout com logotipo fornecido
 
-Substitua APENAS:
-- index.html (raiz do repositorio)
+Copie os 3 arquivos para os mesmos caminhos no GitHub:
+- index.html
 - functions/apps.js
+- assets/modolog-logo.webp
 
-Nao exclua ou altere functions/_session.js, functions/api/auth.js, _routes.json ou as variaveis Cloudflare.
-
-O layout preserva os enderecos dos aplicativos, login Supabase, validacao de sessao, logout e CSP connect-src self.
-
-Depois do commit, aguarde Cloudflare Pages Success e teste entrar, sair e acessar /apps em janela anonima.
+Nao altere _session.js, api/auth.js, _routes.json ou variaveis do Cloudflare.
+O logo e carregado como imagem local e a CSP de /apps permite img-src self.
+Apos o deploy, teste login, logout e acesso anonimo a /apps.
