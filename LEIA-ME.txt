@@ -1,10 +1,10 @@
-MODOLOG - Layout com logotipo fornecido
+MODOLOG PORTAL — ÍCONES OFICIAIS
 
-Copie os 3 arquivos para os mesmos caminhos no GitHub:
-- index.html
-- functions/apps.js
-- assets/modolog-logo.webp
+Atualização apenas visual dos cartões dos aplicativos.
+Arquivos alterados: functions/apps.js e apps.js (cópia existente no repositório).
+Arquivos novos: assets/checklist-icon.webp e assets/apr-dds-icon.webp.
 
-Nao altere _session.js, api/auth.js, _routes.json ou variaveis do Cloudflare.
-O logo e carregado como imagem local e a CSP de /apps permite img-src self.
-Apos o deploy, teste login, logout e acesso anonimo a /apps.
+Substitua o conteúdo do repositório pelo conteúdo desta pasta, preservando a estrutura.
+As funções de autenticação, a rota e a configuração de sessão não foram alteradas.
+Aguarde o Cloudflare Pages concluir o deploy e atualize /apps com Ctrl+F5.
+Teste Entrar, Sair e os dois links.
