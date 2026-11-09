@@ -1,10 +1,11 @@
-MODOLOG PORTAL — ÍCONES OFICIAIS
+MODOLOG — Portal com página inicial pública
 
-Atualização apenas visual dos cartões dos aplicativos.
-Arquivos alterados: functions/apps.js e apps.js (cópia existente no repositório).
-Arquivos novos: assets/checklist-icon.webp e assets/apr-dds-icon.webp.
+Publicar todos os arquivos e pastas deste ZIP na raiz do repositório GitHub MODOLOG.
 
-Substitua o conteúdo do repositório pelo conteúdo desta pasta, preservando a estrutura.
-As funções de autenticação, a rota e a configuração de sessão não foram alteradas.
-Aguarde o Cloudflare Pages concluir o deploy e atualize /apps com Ctrl+F5.
-Teste Entrar, Sair e os dois links.
+/ = página pública
+/login.html = tela de login do Supabase Checklist
+/apps = painel protegido por sessão; visitantes sem login são enviados a /login.html
+Sair encerra a sessão e volta para /login.html.
+
+Manter as quatro variáveis atuais do Cloudflare. Não alterar o Supabase.
+Testar em janela anônima: / abre publicamente; /apps deve redirecionar para /login.html; após login abre /apps; após Sair, /apps deve exigir novo login.
