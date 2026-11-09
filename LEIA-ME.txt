@@ -1,11 +1,10 @@
-MODOLOG — Portal com página inicial pública
+MODOLOG - Página pública com serviços e imagens ilustrativas
 
-Publicar todos os arquivos e pastas deste ZIP na raiz do repositório GitHub MODOLOG.
+Atualize o repositório GitHub com os arquivos deste ZIP mantendo as pastas.
+Página pública: /
+Login: /login.html
+Painel protegido: /apps
 
-/ = página pública
-/login.html = tela de login do Supabase Checklist
-/apps = painel protegido por sessão; visitantes sem login são enviados a /login.html
-Sair encerra a sessão e volta para /login.html.
-
-Manter as quatro variáveis atuais do Cloudflare. Não alterar o Supabase.
-Testar em janela anônima: / abre publicamente; /apps deve redirecionar para /login.html; após login abre /apps; após Sair, /apps deve exigir novo login.
+Mantidos os arquivos de autenticação e a função de logout.
+Imagens em assets/servico-1.webp a servico-6.webp e terraplenagem-destaque.webp são ilustrativas geradas digitalmente, não fotos reais da frota.
+Revise os textos institucionais antes de publicar e substitua imagens por fotografias autorizadas quando disponíveis.
