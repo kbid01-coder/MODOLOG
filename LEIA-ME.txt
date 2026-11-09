@@ -1,10 +1,9 @@
-MODOLOG - Página pública com serviços e imagens ilustrativas
+MODOLOG - Página pública com fotografias reais
 
-Atualize o repositório GitHub com os arquivos deste ZIP mantendo as pastas.
-Página pública: /
-Login: /login.html
-Painel protegido: /apps
+Atualização: página inicial index.html e imagens assets/.
+Login e autenticação Supabase mantidos sem alteração.
 
-Mantidos os arquivos de autenticação e a função de logout.
-Imagens em assets/servico-1.webp a servico-6.webp e terraplenagem-destaque.webp são ilustrativas geradas digitalmente, não fotos reais da frota.
-Revise os textos institucionais antes de publicar e substitua imagens por fotografias autorizadas quando disponíveis.
+Para publicar: envie os arquivos mantendo as pastas e confirme o deploy no Cloudflare.
+Teste: página pública, botão Apps, login, página /apps, botão Sair.
+
+As fotografias foram fornecidas pelo usuário.
