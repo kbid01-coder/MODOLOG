@@ -1,6 +1,6 @@
-MODOLOG Portal - fotos reais e banner com video em loop
+MODOLOG SITE — Atualização da página Apps
 
-Publicar todos os arquivos e pastas deste ZIP no repositorio GitHub do Portal MODOLOG.
-O banner utiliza assets/modolog-obras-banner.mp4 (autoplay, muted, loop, playsinline).
-Adicionadas fotos obra-real-10.webp a obra-real-12.webp.
-Autenticacao Supabase e paginas de aplicativos mantidas conforme ZIP original.
+Adicionado MODOLOG OC com ícone e link https://modolog-whatss.pages.dev/
+Mantidos os aplicativos Checklist e APR & DDS e o sistema de autenticação do portal.
+
+Publique o conteúdo da pasta MODOLOG-main na raiz do repositório do site.
