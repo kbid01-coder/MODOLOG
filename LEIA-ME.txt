@@ -1,6 +1,7 @@
-MODOLOG SITE — Atualização da página Apps
+MODOLOG — Site atualizado (RDO no lugar de OC)
 
-Adicionado MODOLOG OC com ícone e link https://modolog-whatss.pages.dev/
-Mantidos os aplicativos Checklist e APR & DDS e o sistema de autenticação do portal.
-
-Publique o conteúdo da pasta MODOLOG-main na raiz do repositório do site.
+No portal autenticado Apps, o cartão MODOLOG OC foi substituído por MODOLOG RDO.
+Link: https://modolog-rdo.pages.dev/
+Ícone: assets/modolog-rdo-icon.webp (da V2.0.16).
+Sem alterações nos aplicativos, banco de dados, login ou demais seções do site.
+Publique a pasta MODOLOG-main no Cloudflare Pages.
